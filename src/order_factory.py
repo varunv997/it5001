@@ -1,6 +1,6 @@
 """file defines OrderFactory"""
 
-from order import LimitOrder, MarketOrder, IOCOrder, FOKOrder, GTCOrder
+from order import LimitOrder
 
 
 class OrderFactory:
@@ -18,10 +18,6 @@ class OrderFactory:
 
     submit_orders = {
         "LO": LimitOrder,
-        "MO": MarketOrder,
-        "IOC": IOCOrder,
-        "FOK": FOKOrder,
-        "GTC": GTCOrder,
     }
 
     @classmethod
